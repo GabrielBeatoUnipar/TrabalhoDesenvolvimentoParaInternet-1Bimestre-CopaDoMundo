@@ -1,0 +1,783 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet'
+);
+
+@import url(
+    'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+);
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+hr {
+    border: 1px solid #fd9206;
+}
+
+.pageHeader {
+    background-color: black;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageHeader img {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 100px;
+}
+
+.pageHeader h1 {
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: white
+}
+
+.pageHeader p {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+}
+
+.tableHeader {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+    color: rgb(182, 182, 182);
+    width: 250px;
+}
+
+.tableHeader th {
+    text-align: center;
+    font-size: 36px;
+    color: #fd9206;
+    font-weight: 800;
+}
+
+.titlegroupsContainer {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.titlegroupsContainer h1 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+}
+
+.titlegroupsContainer p {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    color: rgb(182, 182, 182);
+}
+
+.groupsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}   
+
+.groupsContainer table { 
+    margin: 0px;
+    width: 180px;
+    height: auto;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.groupsContainer td img {
+    width: 25px;
+}
+
+.groupA {
+    border: 1px solid #03e578;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupASelection:hover {
+    color: #03e578;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderA {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupA th {
+    background: #03e578;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupA td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupB {
+    border: 1px solid #fe1846;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupBSelection:hover {
+    color: #fe1846;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderB {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupB th {
+    background: #fe1846;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupB td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupC {
+    border: 1px solid #fd9206;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupCSelection:hover {
+    color: #fd9206;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderC {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupC th {
+    background: #fd9206;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupC td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupD {
+    border: 1px solid #3953fa;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupDSelection:hover {
+    color: #3953fa;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderD {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupD th {
+    background: #3953fa;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupD td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupE {
+    border: 1px solid #6101e7;
+    background: transparent;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupESelection:hover {
+    color: #6101e7;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderE {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupE th {
+    background: #6101e7;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupE td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupF {
+    border: 1px solid #c6ff03;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupFSelection:hover {
+    color: #c6ff03;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderF {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupF th {
+    background: #c6ff03;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupF td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupG {
+    border: 1px solid #f16592;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupGSelection:hover {
+    color: #f16592;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderG {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupG th {
+    background: #f16592;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupG td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupH {
+    border: 1px solid #63ffd8;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupHSelection:hover {
+    color: #63ffd8;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderH {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupH th {
+    background: #63ffd8;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupH td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupI {
+    border: 1px solid #a946b9;
+    background: transparent;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupISelection:hover {
+    color: #a946b9;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderI {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupI th {
+    background: #a946b9;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupI td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupJ {
+    border: 1px solid #2e7182;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupJSelection:hover {
+    color: #2e7182;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderJ {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupJ th {
+    background: #2e7182;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupJ td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupK {
+    border: 1px solid #fc4001;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupKSelection:hover {
+    color: #fc4001;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderK {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupK th {
+    background: #fc4001;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupK td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.groupL {
+    border: 1px solid #47b4e9;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.groupLSelection:hover {
+    color: #47b4e9;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupHeaderL {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.groupL th {
+    background: #47b4e9;
+    padding: 8px;
+    width: 100%; 
+}
+
+.groupL td {
+    background: black;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.titlegamesContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titlegamesContainer h1 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+}
+
+.titlegamesContainer p {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    color: rgb(182, 182, 182);
+}
+
+.descriptiongamesTime {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+}
+
+.gamesContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.gamesTable {
+    width: 1000px;
+    font-family: "Barlow", sans-serif;
+    border: 3px solid #fd9206;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gamesTable th {
+    background-color: #fd9206;
+    text-align: center;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.gamesTable td {
+    text-align: center;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.gamesTable tr:last-child td {
+    border-bottom: none;
+}
+
+.gamesTable td img {
+    width: 25px;
+}
+
+.teamNameLeft {
+    text-align: left !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.confronto {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.teamNameRight {
+    text-align: right !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.round {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.groupGameTableA {
+    font-size: 16px;
+    font-weight: bold;
+    background: #03e578;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableB {
+    font-size: 16px;
+    font-weight: bold;
+    background: #fe1846;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableC {
+    font-size: 16px;
+    font-weight: bold;
+    background: #fd9206;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableD {
+    font-size: 16px;
+    font-weight: bold;
+    background: #3953fa;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableE {
+    font-size: 16px;
+    font-weight: bold;
+    background: #6101e7;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableF {
+    font-size: 16px;
+    font-weight: bold;
+    background: #c6ff03;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableG {
+    font-size: 16px;
+    font-weight: bold;
+    background: #f16592;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableH {
+    font-size: 16px;
+    font-weight: bold;
+    background: #63ffd8;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableI {
+    font-size: 16px;
+    font-weight: bold;
+    background: #a946b9;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableJ {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2e7182;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableK {
+    font-size: 16px;
+    font-weight: bold;
+    background: #fc4001;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.groupGameTableL {
+    font-size: 16px;
+    font-weight: bold;
+    background: #47b4e9;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.dateTable {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.cityTable {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.teamGames:hover {
+    background-color: #fd9206;
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.titlecityContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlecityContainer h1 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    color: #fd9206;
+    font-weight: 800;
+}
+
+.titlecityContainer p {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.cityContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.titlegroupStage {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.titlegroupStage h1 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    color: #fd9206;
+    font-weight: 700;
+}
